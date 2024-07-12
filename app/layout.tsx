@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="relative w-full flex items-center justify-center">
           <Navbar className="top-2" />
-          <div>
+          <div className="mt-20">
             {children}
           </div>
         </div>

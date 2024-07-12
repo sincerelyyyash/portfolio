@@ -1,61 +1,50 @@
 "use client";
-import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "../components/ui/navbar-menu";
-import { cn } from "@/utils/cn";
+import React from 'react';
 
-
-export function Navbar({ className }: { className?: string }) {
-  const [active, setActive] = useState<string | null>(null);
+export function Navbar() {
   return (
-    <div
-      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
-    >
-      <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Services">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
-          </div>
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Products">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
-            <ProductItem
-              title="Algochurn"
-              href="https://algochurn.com"
-              src="https://assets.aceternity.com/demos/algochurn.webp"
-              description="Prepare for tech interviews like never before."
-            />
-            <ProductItem
-              title="Tailwind Master Kit"
-              href="https://tailwindmasterkit.com"
-              src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-              description="Production ready Tailwind css components for your next project"
-            />
-            <ProductItem
-              title="Moonbeam"
-              href="https://gomoonbeam.com"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-              description="Never write from scratch again. Go from idea to blog in minutes."
-            />
-            <ProductItem
-              title="Rogue"
-              href="https://userogue.com"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
-            />
-          </div>
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Pricing">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-          </div>
-        </MenuItem>
-      </Menu>
+    <div className='flex justify-between w-full p-4'>
+      <div className='text-2xl'>
+        Yash Thakur
+      </div>
+      <div className='flex items-center space-x-8'>
+        <div className='flex space-x-4'>
+          <div>Skills</div>
+          <div>Work</div>
+          <div>Projects</div>
+        </div>
+        <div className='flex items-center space-x-4'>
+          <div className='text-md p-2'>|</div>
+          <GithubIcon />
+          <TwitterIcon />
+          <LinkedInIcon />
+        </div>
+      </div>
     </div>
   );
 }
+
+function GithubIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="currentColor">
+      <path d="M15 3C8.373 3 3 8.373 3 15c0 5.623 3.872 10.328 9.092 11.63 0.664 0.122 0.908-0.289 0.908-0.646 0-0.319-0.012-1.163-0.018-2.284-3.697 0.804-4.478-1.779-4.478-1.779-0.604-1.534-1.474-1.944-1.474-1.944-1.206-0.825 0.091-0.809 0.091-0.809 1.333 0.094 2.035 1.371 2.035 1.371 1.186 2.034 3.114 1.447 3.872 1.106 0.121-0.86 0.464-1.447 0.846-1.779-2.952-0.336-6.056-1.477-6.056-6.577 0-1.453 0.519-2.641 1.373-3.573-0.137-0.336-0.595-1.689 0.131-3.52 0 0 1.119-0.359 3.667 1.367 1.065-0.296 2.209-0.445 3.346-0.451 1.137 0.006 2.281 0.155 3.346 0.451 2.548-1.726 3.667-1.367 3.667-1.367 0.726 1.831 0.268 3.184 0.131 3.52 0.856 0.932 1.373 2.12 1.373 3.573 0 5.11-3.107 6.236-6.065 6.563 0.479 0.411 0.906 1.232 0.906 2.482 0 1.793-0.016 3.239-0.016 3.678 0 0.358 0.241 0.774 0.912 0.643C21.13 25.323 25 20.623 25 15 25 8.373 19.627 3 15 3z"></path>
+    </svg>
+  );
+}
+
+function TwitterIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23.643 4.937c-.835.37-1.732.621-2.675.732a4.708 4.708 0 0 0 2.087-2.623 9.573 9.573 0 0 1-3.03 1.164 4.751 4.751 0 0 0-8.21 4.335 13.428 13.428 0 0 1-9.747-4.95 4.699 4.699 0 0 0 1.469 6.338 4.643 4.643 0 0 1-2.153-.597v.06a4.743 4.743 0 0 0 3.808 4.654 4.766 4.766 0 0 1-2.148.081 4.747 4.747 0 0 0 4.426 3.29A9.53 9.53 0 0 1 1.2 20.921a13.388 13.388 0 0 0 7.265 2.13c8.72 0 13.486-7.235 13.486-13.486 0-.205-.005-.41-.014-.614A9.6 9.6 0 0 0 24 4.59a9.36 9.36 0 0 1-2.357.646z"></path>
+    </svg>
+  );
+}
+
+function LinkedInIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M19.99 2H4.01C2.92 2 2 2.9 2 3.99v16.02C2 21.1 2.92 22 4.01 22h15.98C21.1 22 22 21.1 22 20.01V3.99C22 2.9 21.1 2 19.99 2zm-12.49 17H5v-9h2.5v9zm-1.25-10.24c-.83 0-1.5-.68-1.5-1.5s.67-1.5 1.5-1.5 1.5.68 1.5 1.5-.68 1.5-1.5 1.5zm10.75 10.24h-2.5v-4.5c0-1.07-.93-1.94-2.5-1.94s-2.5.87-2.5 1.94v4.5h-2.5v-9h2.5v1.12c.76-1.2 2.07-1.97 3.5-1.97 2.07 0 3.5 1.63 3.5 3.85v5z"></path>
+    </svg>
+  );
+}
+
