@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={palanquin.className}>
         <div className="relative w-full flex items-center justify-center flex-col">
           <Navbar />
-          <div className="mt-10">
+          <div className="mt-10 w-full">
             {children}
           </div>
         </div>
