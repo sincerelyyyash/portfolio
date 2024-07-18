@@ -5,7 +5,7 @@ export function Navbar() {
   return (
     <div className='flex justify-between w-full p-4'>
       <div className='text-2xl'>
-        Yash Thakur
+        {/*   Yash Thakur */}
       </div>
       <div className='flex items-center space-x-8'>
         <div className='flex space-x-4'>
