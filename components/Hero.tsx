@@ -1,6 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
-import { HeroHighlight, Highlight } from "../components/ui/hero-highlight";
 import Image from 'next/image';
 
 export default function Hero() {
@@ -21,10 +19,10 @@ export default function Hero() {
 
       <div className="flex-1 md:flex-[2/3] p-4 rounded-lg shadow-md mt-10 md:mt-0">
         <h3 className="text-lg md:text-xl font-semibold">Hey There!</h3>
-        <div className="mt-6 mb-6">
-          <Highlight className="text-2xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-relaxed lg:leading-snug">
-            I'm Yash Thakur
-          </Highlight>
+        <div className="mt-20 md:mt-0 text-xl md:text-4xl 
+            font-bold bg-clip-text text-transparent 
+            bg-gradient-to-b from-neutral-50 to-neutral-40">
+          I'm Yash Thakur
         </div>
 
         <h4 className="text-lg md:text-2xl">Full Stack Developer</h4>
