@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={palanquin.className}>
-        <TracingBeam className="px-4">
+        <TracingBeam className="pl-4">
           <div className="relative w-full flex items-center justify-center flex-col">
             <Navbar />
             <div className="mt-10 w-full">
