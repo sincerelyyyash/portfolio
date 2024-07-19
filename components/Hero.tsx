@@ -18,19 +18,21 @@ export default function Hero() {
       </div>
 
       <div className="flex-1 md:flex-[2/3] p-4 rounded-lg shadow-md mt-10 md:mt-0">
-        <h3 className="text-lg md:text-xl font-semibold">Hey There!</h3>
-        <div className="mt-20 md:mt-0 text-xl md:text-4xl 
-            font-bold bg-clip-text text-transparent 
-            bg-gradient-to-b from-neutral-50 to-neutral-40">
-          I'm Yash Thakur
+        <div className="relative z-10 text-lg md:text-7xl  
+          bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold">
+          Yash Thakur
         </div>
 
-        <h4 className="text-lg md:text-2xl">Full Stack Developer</h4>
-        <p className="text-md md:text-lg mt-4">
-          Hello! My name is Yash Thakur, and I'm a software developer specializing in full stack development.<br />
-          Since 2020, I've been passionate about coding and building innovative solutions.<br />
-          I enjoy tackling complex problems and continuously learning new technologies.
-        </p>
+        <h4 className="relative z-10 text-lg md:text-4xl  
+          bg-clip-text text-transparent bg-gradient-to-b from-neutral-600 to-neutral-200 mt-4 mb-2">
+          Full Stack Developer
+        </h4>
+        <h4 className="relative z-10 text-lg md:text-4xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-600 to-neutral-500">
+          ~ From concept to code, making it happen.
+        </h4>
+        {/* <p className="text-md md:text-lg text-neutral-700 dark:text-neutral-300 mt-6 leading-relaxed"> */}
+        {/*   Hello! My name is Yash Thakur, and I'm a software developer specializing in full stack development. Since 2020, I've been passionate about coding and building innovative solutions. I enjoy tackling complex problems and continuously learning new technologies. */}
+        {/* </p> */}
       </div>
     </section>
   );
