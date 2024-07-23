@@ -1,5 +1,5 @@
 
-const skills = {
+export const skills = {
   default: [
     { skill: "NextJS", img: "/path" },
     { skill: "React", img: "/path/to/postgresqlimg.png" },
@@ -12,16 +12,21 @@ const skills = {
     { skill: "Github", img: "/path/to/postgresqlimg.png" },
     { skill: "Docker", img: "/path/to/postgresqlimg.png" },
     { skill: "AWS", img: "/path/to/postgresqlimg.png" },
-
+    { skill: "Java", img: "/path/to/postgresqlimg.png" },
+    { skill: "Python", img: "/path/to/postgresqlimg.png" },
   ],
   frontend: [
     { skill: "React", img: "/path/to/reactimg.png" },
     { skill: "NextJS", img: "/path" },
     { skill: "Flutter", img: "/path/to/vueimg.png" },
+    { skill: "Tailwind CSS", img: "/path/to/vueimg.png" },
+    { skill: "ShadCN", img: "/path/to/vueimg.png" },
+    { skill: "Aceternity", img: "/path/to/vueimg.png" },
   ],
   backend: [
     { skill: "Node.js", img: "/path/to/nodeimg.png" },
     { skill: "Express.js", img: "/path/to/expressimg.png" },
+    { skill: "Cloudflare Workers", img: "/path/to/vueimg.png" },
     { skill: "Firebase", img: "/path/to/postgresqlimg.png" },
   ],
   database: [
@@ -36,9 +41,12 @@ const skills = {
     { skill: "Github", img: "/path/to/postgresqlimg.png" },
     { skill: "Vscode", img: "/path/to/postgresqlimg.png" },
     { skill: "Neovim", img: "/path/to/postgresqlimg.png" },
+    { skill: "Bash", img: "/path/to/vueimg.png" },
+    { skill: "Prisma", img: "/path/to/vueimg.png" },
   ],
   devops: [
     { skill: "AWS", img: "/path/to/awsimg.png" },
+    { skill: "Cloudflare", img: "/path/to/vueimg.png" },
     { skill: "CI/CD", img: "/path/to/cicdimg.png" },
   ],
 };
