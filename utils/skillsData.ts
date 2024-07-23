@@ -1,52 +1,62 @@
 
+export interface Skill {
+  skill: string;
+  img: string;
+}
+
+export interface SkillsData {
+  [key: string]: Skill[];
+}
+
 export const skills = {
   default: [
-    { skill: "NextJS", img: "../public/assets/logo/nextjs-icon.svg" },
-    { skill: "React", img: "../public/assets/logo/react.svg" },
-    { skill: "PostgreSQL", img: "../public/assets/logo/postgresql.svg" },
-    { skill: "MongoDB", img: "../public/assets/logo/mongodb-icon.svg" },
-    { skill: "NodeJS", img: "../public/assets/logo/nodejs.svg" },
-    { skill: "Typescript", img: "../public/assets/logo/typescript-icon.svg" },
-    { skill: "Javascript", img: "../public/assets/logo/javascript.svg" },
-    { skill: "Turborepo", img: "../public/assets/logo/turborepo-icon.svg" },
-    { skill: "Github", img: "../public/assets/logo/github-icon.svg" },
-    { skill: "Docker", img: "../public/assets/logo/docker-icon.svg" },
-    { skill: "AWS", img: "../public/assets/logo/aws.svg" },
-    { skill: "Java", img: "../public/assets/logo/java.svg" },
-    { skill: "Python", img: "../public/assets/logo/python.svg" },
+    { skill: 'NextJS', img: '/assets/logo/nextjs-icon.png' },
+    { skill: 'React', img: '/assets/logo/react.png' },
+    { skill: 'PostgreSQL', img: '/assets/logo/postgresql.png' },
+    { skill: 'MongoDB', img: '/assets/logo/mongodb-icon.png' },
+    { skill: 'NodeJS', img: '/assets/logo/nodejs.png' },
+    { skill: 'Typescript', img: '/assets/logo/typescript-icon.png' },
+    { skill: 'Javascript', img: '/assets/logo/javascript.png' },
+    { skill: 'Turborepo', img: '/assets/logo/turborepo-icon.png' },
+    { skill: 'Github', img: '/assets/logo/github-icon.png' },
+    { skill: 'Docker', img: '/assets/logo/docker-icon.png' },
+    { skill: 'AWS', img: '/assets/logo/aws.png' },
+    { skill: 'Java', img: '/assets/logo/java.png' },
+    { skill: 'Python', img: '/assets/logo/python.png' },
   ],
   frontend: [
-    { skill: "React", img: "../public/assets/logo/react.svg" },
-    { skill: "NextJS", img: "../public/assets/logo/nextjs-icon.svg" },
-    { skill: "Flutter", img: "../public/assets/logo/flutter.svg" },
-    { skill: "Tailwind CSS", img: "../public/assets/logo/tailwindcss-icon.svg" },
-    { skill: "ShadCN", img: "../public/assets/logo/shadcn.svg" },
-    { skill: "Aceternity", img: "../public/assets/logo/aceternity.svg" },
+    { skill: 'React', img: '/assets/logo/react.png' },
+    { skill: 'NextJS', img: '/assets/logo/nextjs-icon.png' },
+    { skill: 'Flutter', img: '/assets/logo/flutter.png' },
+    { skill: 'Tailwind CSS', img: '/assets/logo/tailwindcss-icon.png' },
+    { skill: 'ShadCN', img: '/assets/logo/shadcn.png' },
+    { skill: 'Aceternity', img: '/assets/logo/aceternity.png' },
   ],
   backend: [
-    { skill: "Node.js", img: "../public/assets/logo/nodejs.svg" },
-    { skill: "Express.js", img: "../public/assets/logo/express.svg" },
-    { skill: "Cloudflare Workers", img: "../public/assets/logo/cloudflare-workers.svg" },
-    { skill: "Firebase", img: "../public/assets/logo/firebase.svg" },
+    { skill: 'Node.js', img: '/assets/logo/nodejs.png' },
+    { skill: 'Express.js', img: '/assets/logo/express.png' },
+    { skill: 'Cloudflare Workers', img: '/assets/logo/cloudflare-workers.png' },
+    { skill: 'Firebase', img: '/assets/logo/firebase.png' },
   ],
   database: [
-    { skill: "MongoDB", img: "../public/assets/logo/mongodb-icon.svg" },
-    { skill: "PostgreSQL", img: "../public/assets/logo/postgresql.svg" },
-    { skill: "MySQL", img: "../public/assets/logo/mysql-icon.svg" },
-    { skill: "Firebase", img: "../public/assets/logo/firebase.svg" },
+    { skill: 'MongoDB', img: '/assets/logo/mongodb-icon.png' },
+    { skill: 'PostgreSQL', img: '/assets/logo/postgresql.png' },
+    { skill: 'MySQL', img: '/assets/logo/mysql-icon.png' },
+    { skill: 'Firebase', img: '/assets/logo/firebase.png' },
   ],
   tools: [
-    { skill: "Docker", img: "../public/assets/logo/docker-icon.svg" },
-    { skill: "Git", img: "../public/assets/logo/git-icon.svg" },
-    { skill: "Github", img: "../public/assets/logo/github-icon.svg" },
-    { skill: "Vscode", img: "../public/assets/logo/visual-studio-code.svg" },
-    { skill: "Neovim", img: "../public/assets/logo/neovim.svg" },
-    { skill: "Bash", img: "../public/assets/logo/bash.svg" },
-    { skill: "Prisma", img: "../public/assets/logo/prisma.svg" },
+    { skill: 'Docker', img: '/assets/logo/docker-icon.png' },
+    { skill: 'Git', img: '/assets/logo/git-icon.png' },
+    { skill: 'Github', img: '/assets/logo/github-icon.png' },
+    { skill: 'Vscode', img: '/assets/logo/visual-studio-code.png' },
+    { skill: 'Neovim', img: '/assets/logo/neovim.png' },
+    { skill: 'Bash', img: '/assets/logo/bash.png' },
+    { skill: 'Prisma', img: '/assets/logo/prisma.png' },
   ],
   devops: [
-    { skill: "AWS", img: "../public/assets/logo/aws.svg" },
-    { skill: "Cloudflare", img: "../public/assets/logo/cloudflare-icon.svg" },
-    { skill: "CI/CD", img: "../public/assets/logo/ci-cd.svg" },
+    { skill: 'AWS', img: '/assets/logo/aws.png' },
+    { skill: 'Cloudflare', img: '/assets/logo/cloudflare-icon.png' },
+    { skill: 'CI/CD', img: '/assets/logo/ci-cd.png' },
   ],
 };
+
