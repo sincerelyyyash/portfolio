@@ -1,6 +1,5 @@
 "use client";
 
-import Head from 'next/head';
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Card from '../components/techIconCard';
