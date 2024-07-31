@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import ProjectSection from "@/components/ProjectSection";
 import Skills from "@/components/SkillSection";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="w-full">
       <Hero />
       <Skills />
+      <ProjectSection />
     </div>
   );
 }
