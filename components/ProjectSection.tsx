@@ -1,6 +1,9 @@
-"use client"
+
+"use client";
 
 import { motion } from 'framer-motion';
+import { ProjectCard } from './ProjectCard';
+import { Projects } from '@/utils/projectsData';
 
 const ProjectSection = () => {
   return (
@@ -19,10 +22,14 @@ const ProjectSection = () => {
           Projects
         </h4>
       </motion.div>
-      <div>
+      <div className="max-w-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
+        {Projects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
+        ))}
       </div>
     </div>
   )
 }
 
 export default ProjectSection;
+
