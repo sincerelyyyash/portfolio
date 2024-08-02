@@ -78,7 +78,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             <motion.div
               layoutId={`card-${project.projectName}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-black dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${project.projectName}-${id}`}>
                 <Image
@@ -96,13 +96,13 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                   <div className="">
                     <motion.h3
                       layoutId={`title-${project.projectName}-${id}`}
-                      className="font-medium text-neutral-700 dark:text-neutral-200 text-base"
+                      className="font-medium text-white text-base"
                     >
                       {project.projectName}
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${project.description}-${id}`}
-                      className="text-neutral-600 dark:text-neutral-400 text-base"
+                      className="text-gray-300 text-base"
                     >
                       {project.description}
                     </motion.p>
@@ -116,7 +116,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                       exit={{ opacity: 0 }}
                       href={project.repoLink}
                       target="_blank"
-                      className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                      className="text-gray-400 hover:text-white"
                     >
                       <FaGithub size={24} />
                     </motion.a>
@@ -127,7 +127,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                       exit={{ opacity: 0 }}
                       href={project.deployedLink}
                       target="_blank"
-                      className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                      className="text-gray-400 hover:text-white"
                     >
                       <FaLink size={24} />
                     </motion.a>
@@ -139,7 +139,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-gray-300 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
                     <ul>
                       {project.techStack.map((tech, index) => (
@@ -156,7 +156,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
       <motion.div
         layoutId={`card-${project.projectName}-${id}`}
         onClick={() => setActive(true)}
-        className="p-4 flex flex-col hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+        className="p-4 flex flex-col border border-transparent hover:border-[#6344F5] hover:border-solid rounded-xl cursor-pointer"
       >
         <div className="flex gap-4 flex-col w-full">
           <motion.div layoutId={`image-${project.projectName}-${id}`}>
