@@ -12,7 +12,7 @@ export interface Projects {
 export const Projects = [
   {
     projectName: "Project One",
-    imgSrc: "/assets/images/profile-photo.jpeg",
+    imgSrc: "/assets/images/sh-cover.png",
     deployedLink: "https://example.com",
     repoLink: "https://github.com/example",
     description: "This is a description for Project One.",
@@ -20,7 +20,7 @@ export const Projects = [
   },
   {
     projectName: "Project Two",
-    imgSrc: "/assets/images/profile-photo.jpeg",
+    imgSrc: "/assets/images/sh-cover.png",
     deployedLink: "https://example.com",
     repoLink: "https://github.com/example",
     description: "This is a description for Project Two.",
@@ -28,7 +28,7 @@ export const Projects = [
   },
   {
     projectName: "Project One",
-    imgSrc: "/assets/images/profile-photo.jpeg",
+    imgSrc: "/assets/images/sh-cover.png",
     deployedLink: "https://example.com",
     repoLink: "https://github.com/example",
     description: "This is a description for Project One.",
@@ -36,7 +36,7 @@ export const Projects = [
   },
   {
     projectName: "Project Two",
-    imgSrc: "/assets/images/profile-photo.jpeg",
+    imgSrc: "/assets/images/sh-cover.png",
     deployedLink: "https://example.com",
     repoLink: "https://github.com/example",
     description: "This is a description for Project Two.",
