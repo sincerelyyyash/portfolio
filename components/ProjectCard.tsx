@@ -141,7 +141,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                     exit={{ opacity: 0 }}
                     className="text-gray-300 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
-                    <ul>
+                    <ul className="flex flex-row gap-2">
                       {project.techStack.map((tech, index) => (
                         <li key={index}>{tech}</li>
                       ))}
