@@ -55,7 +55,7 @@ const Skills = () => {
                   key={category}
                   onClick={() => handleCategoryChange(category as SkillCategory)}
                   className={`px-4 py-2 rounded-lg text-xl transition-colors duration-300 ${selectedCategory === category
-                    ? 'text-[#6344F5] bg-gradient-to-b'
+                    ? 'text-blue-500 bg-gradient-to-b'
                     : 'bg-gradient-to-b from-neutral-200 to-neutral-600 text-transparent bg-clip-text'
                     }`}
                 >
