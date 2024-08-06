@@ -66,7 +66,6 @@ const Skills = () => {
           </div>
         </motion.div>
 
-
         <div className="pt-8" />
 
         <motion.div

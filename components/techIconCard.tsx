@@ -14,7 +14,7 @@ const Card: FC<CardProps> = ({ name, imagePath }) => {
           <div className="w-14 h-10 p-2 flex items-center justify-center">
             <img src={imagePath} alt={name} width={64} height={64} className="object-cover" />
           </div>
-          {/* <p className="text-white text-lg mb-4">{name}</p> */}
+          <p className="text-white text-lg ">{name}</p>
         </div>
       </span>
     </button>
