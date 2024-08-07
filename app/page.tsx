@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import ProjectSection from "@/components/ProjectSection";
 import Skills from "@/components/SkillSection";
@@ -10,6 +11,7 @@ export default function Home() {
       <Skills />
       <WorkSection />
       <ProjectSection />
+      <Footer />
     </div>
   );
 }

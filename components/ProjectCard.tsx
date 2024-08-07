@@ -19,6 +19,7 @@ export interface Project {
 export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   const id = useId();
   const [active, setActive] = useState<boolean>(false);
+  const [hovered, setHovered] = useState<boolean>(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -147,7 +148,9 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
       <motion.div
         layoutId={`card-${project.projectName}-${id}`}
         onClick={() => setActive(true)}
-        className="p-4 flex flex-col border border-transparent hover:border-blue-500 hover:border-solid rounded-xl cursor-pointer"
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        className="relative p-4 flex flex-col border border-transparent hover:border-blue-500 hover:border-solid rounded-xl cursor-pointer"
       >
         <div className="flex gap-4 flex-col w-full">
           <motion.div layoutId={`image-${project.projectName}-${id}`}>
@@ -174,6 +177,11 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             </motion.p>
           </div>
         </div>
+        {hovered && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-bold">
+            Click to expand
+          </div>
+        )}
       </motion.div>
     </>
   );
