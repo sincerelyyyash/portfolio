@@ -21,7 +21,7 @@ const Skills = () => {
   const displayedSkills: Skill[] = skills[selectedCategory] || [];
 
   return (
-    <div className="pt-10">
+    <div className="pt-10" id='skills'>
       <motion.div
         initial={{ opacity: 0.5, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}

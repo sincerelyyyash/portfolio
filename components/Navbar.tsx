@@ -5,21 +5,48 @@ export function Navbar() {
   return (
     <div className='flex justify-between w-full p-4'>
       <div className='text-2xl'>
-        {/*   Yash Thakur */}
+        {/* Yash Thakur */}
       </div>
       <div className='flex items-center space-x-8'>
-        <div className='flex space-x-4 bg-clip-text text-transparent text-xl 
-          bg-gradient-to-b from-neutral-200 to-neutral-600 '>
-          <div>Skills</div>
-          <div>Work</div>
-          <div>Projects</div>
+        <div className='flex space-x-4 bg-clip-text text-transparent text-xl bg-gradient-to-b from-neutral-200 to-neutral-600'>
+          <a href="#skills" className="hover:underline">Skills</a>
+          <a href="#work" className="hover:underline">Work</a>
+          <a href="#projects" className="hover:underline">Projects</a>
         </div>
         <div className='flex items-center space-x-4'>
           <div className='text-md p-2'>|</div>
-          <GithubIcon />
-          <TwitterIcon />
-          <LinkedInIcon />
-          <LeetCodeIcon />
+          <div className='relative group'>
+            <a href='https://github.com/sincerelyyyash' target='_blank' rel='noopener noreferrer'>
+              <GithubIcon />
+            </a>
+            <span className='absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+              sincerelyyyash
+            </span>
+          </div>
+          <div className='relative group'>
+            <a href='https://x.com/sincerelyyyash' target='_blank' rel='noopener noreferrer'>
+              <TwitterIcon />
+            </a>
+            <span className='absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+              sincerelyyyash
+            </span>
+          </div>
+          <div className='relative group'>
+            <a href='https://www.linkedin.com/in/sincerelyyyash/' target='_blank' rel='noopener noreferrer'>
+              <LinkedInIcon />
+            </a>
+            <span className='absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+              sincerelyyyash
+            </span>
+          </div>
+          <div className='relative group'>
+            <a href='https://leetcode.com/sincerelyyyash/' target='_blank' rel='noopener noreferrer'>
+              <LeetCodeIcon />
+            </a>
+            <span className='absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+              sincerelyyyash
+            </span>
+          </div>
         </div>
       </div>
     </div>
