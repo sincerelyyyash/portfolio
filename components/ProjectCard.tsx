@@ -20,6 +20,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   const id = useId();
   const [active, setActive] = useState<boolean>(false);
   const [hovered, setHovered] = useState<boolean>(false);
+  const [iconHovered, setIconHovered] = useState<string | null>(null);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -100,29 +101,51 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                     </motion.p>
                   </div>
 
-                  <div className="flex space-x-2">
-                    <motion.a
-                      layout
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      href={project.repoLink}
-                      target="_blank"
-                      className="text-gray-300 hover:text-white"
+                  <div className="flex space-x-2 relative">
+                    <div
+                      onMouseEnter={() => setIconHovered('github')}
+                      onMouseLeave={() => setIconHovered(null)}
+                      className="relative"
                     >
-                      <FaGithub size={24} />
-                    </motion.a>
-                    <motion.a
-                      layout
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      href={project.deployedLink}
-                      target="_blank"
-                      className="text-gray-300 hover:text-white"
+                      <motion.a
+                        layout
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        href={project.repoLink}
+                        target="_blank"
+                        className="text-gray-300 hover:text-white"
+                      >
+                        <FaGithub size={24} />
+                      </motion.a>
+                      {iconHovered === 'github' && (
+                        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 px-2 py-1 bg-black text-white text-xs rounded">
+                          View GitHub Repo
+                        </div>
+                      )}
+                    </div>
+                    <div
+                      onMouseEnter={() => setIconHovered('link')}
+                      onMouseLeave={() => setIconHovered(null)}
+                      className="relative"
                     >
-                      <FaLink size={24} />
-                    </motion.a>
+                      <motion.a
+                        layout
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        href={project.deployedLink}
+                        target="_blank"
+                        className="text-gray-300 hover:text-white"
+                      >
+                        <FaLink size={24} />
+                      </motion.a>
+                      {iconHovered === 'link' && (
+                        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 px-2 py-1 bg-black text-white text-xs rounded">
+                          Live Link
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
                 <div className="pt-4 relative px-4">
@@ -182,7 +205,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             Click to expand
           </div>
         )}
-      </motion.div >
+      </motion.div>
     </>
   );
 };

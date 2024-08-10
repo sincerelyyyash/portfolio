@@ -7,7 +7,7 @@ interface CardProps {
   location: string;
   startDate: string;
   endDate: string;
-  description: string;
+  description: string[];
   skills: string[];
 }
 
@@ -38,8 +38,13 @@ const WorkExCard: FC<CardProps> = ({
           </div>
         </div>
         <h3 className="text-lg font-semibold mt-2">{title}</h3>
-        <p className="text-sm mt-2 break-words">{description}</p>
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="text-sm mt-2">
+          {description.map((line, index) => (
+            <p key={index} className="mb-2 break-words">
+              {line}
+            </p>
+          ))}
+        </div>        <div className="mt-4 flex flex-wrap gap-2">
           {skills.map((skill) => (
             <span
               key={skill}

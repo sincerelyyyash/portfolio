@@ -6,7 +6,7 @@ import { EmailIcon, GithubIcon, LinkedInIcon, TwitterIcon } from './Navbar';
 function Footer() {
   return (
     <motion.div
-      className='flex justify-between w-full p-4 border-t my-20'
+      className='flex justify-between w-full p-4 border-t mt-20'
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
