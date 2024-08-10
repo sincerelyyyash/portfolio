@@ -135,7 +135,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                   >
                     <ul className="flex flex-row gap-2">
                       {project.techStack.map((tech, index) => (
-                        <li key={index} className="text-gray-300">{tech}</li>
+                        <li key={index} className="bg-gray-800 rounded-full px-3 py-1 text-xs font-medium text-blue-500">{tech}</li>
                       ))}
                     </ul>
                   </motion.div>
@@ -165,24 +165,24 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
           <div className="flex justify-center items-center flex-col">
             <motion.h3
               layoutId={`title-${project.projectName}-${id}`}
-              className="font-medium text-neutral-100 dark:text-neutral-300 text-center md:text-left text-base" // Brighter text for collapsed state
+              className="font-medium text-neutral-100 dark:text-neutral-300 text-center md:text-left text-base"
             >
               {project.projectName}
             </motion.h3>
             <motion.p
               layoutId={`description-${project.description}-${id}`}
-              className="text-neutral-200 dark:text-neutral-500 text-center md:text-left text-base" // Brighter text for collapsed state
+              className="text-neutral-200 dark:text-neutral-500 text-center md:text-left text-base"
             >
               {project.description}
             </motion.p>
           </div>
         </div>
         {hovered && (
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-bold">
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white font-bold">
             Click to expand
           </div>
         )}
-      </motion.div>
+      </motion.div >
     </>
   );
 };
