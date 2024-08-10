@@ -7,7 +7,7 @@ import { Projects } from '@/utils/projectsData';
 
 const ProjectSection = () => {
   return (
-    <div className="pt-10" id='projects'>
+    <div className="pt-10 my-20" id='projects'>
       <motion.div
         initial={{ opacity: 0.5, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}

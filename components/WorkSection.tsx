@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 function WorkSection() {
   return (
-    <div className="pt-10" id='work'>
+    <div className="pt-10 my-20" id='work'>
       <motion.div
         initial={{ opacity: 0.5, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
