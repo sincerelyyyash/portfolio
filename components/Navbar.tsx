@@ -1,20 +1,21 @@
 "use client";
+
 import React from 'react';
 
-export function Navbar() {
+export function Navbar(): JSX.Element {
   return (
-    <div className='flex justify-between w-full p-4'>
-      <div className='text-2xl'>
+    <div className='flex flex-col md:flex-row justify-between w-full p-4'>
+      <div className='text-2xl mb-4 md:mb-0'>
         {/* Yash Thakur */}
       </div>
-      <div className='flex items-center space-x-8'>
-        <div className='flex space-x-4 bg-clip-text text-transparent text-xl bg-gradient-to-b from-neutral-200 to-neutral-600'>
+      <div className='flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8'>
+        <div className='hidden md:flex space-x-4 bg-clip-text text-transparent text-xl bg-gradient-to-b from-neutral-200 to-neutral-600'>
           <a href="#skills" className="hover:underline">Skills</a>
           <a href="#work" className="hover:underline">Work</a>
           <a href="#projects" className="hover:underline">Projects</a>
         </div>
-        <div className='flex items-center space-x-4'>
-          <div className='text-md p-2'>|</div>
+        <div className='text-md p-2 hidden md:block'>|</div> {/* Divider line */}
+        <div className='flex space-x-4'>
           <div className='relative group'>
             <a href='https://github.com/sincerelyyyash' target='_blank' rel='noopener noreferrer'>
               <GithubIcon />
@@ -60,6 +61,7 @@ export function Navbar() {
     </div>
   );
 }
+
 
 export function GithubIcon() {
   return (

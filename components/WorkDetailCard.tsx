@@ -22,12 +22,12 @@ const WorkExCard: FC<CardProps> = ({
 }) => {
   return (
     <div
-      className="bg-gray-900 rounded-xl shadow-lg p-6 text-white relative overflow-hidden mb-4 w-full"
+      className="bg-gray-900 rounded-xl shadow-lg p-6 text-white relative overflow-hidden mb-4 w-full max-w-2xl"
       style={{ border: "1px solid #E2CBFF" }}
     >
       <div className="flex flex-col">
-        <div className="flex justify-between items-start mb-4">
-          <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-600 to-neutral-200">
+        <div className="flex flex-col md:flex-row justify-between items-start mb-4">
+          <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-600 to-neutral-200 mb-2 md:mb-0">
             {name}
           </h2>
           <div className="text-sm font-light text-right">
@@ -44,7 +44,8 @@ const WorkExCard: FC<CardProps> = ({
               {line}
             </p>
           ))}
-        </div>        <div className="mt-4 flex flex-wrap gap-2">
+        </div>
+        <div className="mt-4 flex flex-wrap gap-2">
           {skills.map((skill) => (
             <span
               key={skill}

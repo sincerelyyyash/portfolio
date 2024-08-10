@@ -15,24 +15,26 @@ function WorkSection() {
           duration: 0.8,
           ease: 'easeInOut',
         }}
-        className="flex flex-wrap justify-center mt-4"
+        className="flex flex-col items-center mt-4"
       >
         <h4 className="py-10 relative z-10 text-lg md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-600 to-neutral-200 mt-4 mb-2">
           Work Experience
         </h4>
 
-        {experiences.map((exp, index) => (
-          <WorkExCard
-            key={index}
-            name={exp.name}
-            title={exp.title}
-            location={exp.location}
-            startDate={exp.startDate}
-            endDate={exp.endDate}
-            description={exp.description}
-            skills={exp.skills}
-          />
-        ))}
+        <div className="flex flex-wrap justify-center gap-4 max-w-4xl w-full">
+          {experiences.map((exp, index) => (
+            <WorkExCard
+              key={index}
+              name={exp.name}
+              title={exp.title}
+              location={exp.location}
+              startDate={exp.startDate}
+              endDate={exp.endDate}
+              description={exp.description}
+              skills={exp.skills}
+            />
+          ))}
+        </div>
       </motion.div>
     </div>
   );

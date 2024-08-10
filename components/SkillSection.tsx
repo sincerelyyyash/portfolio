@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Card from '../components/techIconCard';
@@ -48,13 +47,13 @@ const Skills = () => {
           }}
           className="flex flex-wrap justify-center mt-4"
         >
-          <div className="flex justify-center bg-black z-10 py-4">
-            <div className="flex space-x-4">
+          <div className="flex flex-wrap justify-center bg-black z-10 py-4 px-2 w-full">
+            <div className="flex flex-wrap justify-center space-x-2 md:space-x-4">
               {Object.keys(skills).filter((category) => category !== 'default').map((category) => (
                 <button
                   key={category}
                   onClick={() => handleCategoryChange(category as SkillCategory)}
-                  className={`px-4 py-2 rounded-lg text-xl transition-colors duration-300 ${selectedCategory === category
+                  className={`px-4 py-2 rounded-lg text-lg md:text-xl transition-colors duration-300 ${selectedCategory === category
                     ? 'text-blue-500 bg-gradient-to-b'
                     : 'bg-gradient-to-b from-neutral-200 to-neutral-600 text-transparent bg-clip-text'
                     }`}
@@ -76,7 +75,7 @@ const Skills = () => {
             duration: 0.8,
             ease: 'easeInOut',
           }}
-          className="flex flex-wrap justify-center mt-4"
+          className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4" // Adjust the grid layout here
         >
           {displayedSkills.map((skill, index) => (
             <Card key={index} name={skill.skill} imagePath={skill.img} />

@@ -8,10 +8,13 @@ export default function Home() {
   return (
     <div className="w-full">
       <Hero />
-      <Skills />
-      <WorkSection />
-      <ProjectSection />
+      <div className="px-4 sm:px-6 lg:px-8">
+        <Skills />
+        <WorkSection />
+        <ProjectSection />
+      </div>
       <Footer />
     </div>
   );
 }
+

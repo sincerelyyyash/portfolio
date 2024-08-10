@@ -4,12 +4,12 @@ import { Navbar } from "@/components/Navbar";
 import { Palanquin } from "next/font/google";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 
-
 const palanquin = Palanquin({
   subsets: ["latin"],
   variable: "--font-palanquin",
   weight: ["100", "200", "300", "400", "500", "600"]
-})
+});
+
 export const metadata: Metadata = {
   title: "Yash Thakur",
   description: "Full Stack Developer Portfolio",
@@ -23,10 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={palanquin.className}>
-        <TracingBeam className="pl-4">
-          <div className="relative w-full flex items-center justify-center flex-col">
+        <TracingBeam className="pl-4 lg:pl-8">
+          <div className="relative w-full flex items-center justify-center flex-col px-4 sm:px-6 lg:px-8">
             <Navbar />
-            <div className="mt-10 w-full">
+            <div className="mt-10 w-full max-w-7xl">
               {children}
             </div>
           </div>
@@ -35,3 +35,4 @@ export default function RootLayout({
     </html>
   );
 }
+

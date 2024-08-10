@@ -56,7 +56,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
       </AnimatePresence>
       <AnimatePresence>
         {active ? (
-          <div className="fixed inset-0 grid place-items-center z-[100]">
+          <div className="fixed inset-0 grid place-items-center z-[100] p-4">
             <motion.button
               key={`button-${project.projectName}-${id}`}
               layout
@@ -71,31 +71,31 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             <motion.div
               layoutId={`card-${project.projectName}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-black dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[90%] md:max-w-[80%] lg:max-w-[70%] h-full max-h-[90%] md:max-h-[80%] lg:max-h-[70%] flex flex-col bg-black dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${project.projectName}-${id}`}>
                 <Image
                   priority
-                  width={200}
-                  height={200}
+                  width={1200}
+                  height={800}
                   src={project.imgSrc}
                   alt={project.projectName}
-                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                  className="w-full h-60 sm:h-72 md:h-80 lg:h-80 rounded-t-lg object-cover object-top"
                 />
               </motion.div>
 
-              <div>
-                <div className="flex justify-between items-start p-4">
+              <div className="p-4">
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
                   <div>
                     <motion.h3
                       layoutId={`title-${project.projectName}-${id}`}
-                      className="font-medium text-white text-base"
+                      className="font-medium text-white text-lg sm:text-xl"
                     >
                       {project.projectName}
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${project.description}-${id}`}
-                      className="text-gray-200 text-base"
+                      className="text-gray-200 text-sm sm:text-base mt-1"
                     >
                       {project.description}
                     </motion.p>
@@ -156,7 +156,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                     exit={{ opacity: 0 }}
                     className="text-gray-200 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
-                    <ul className="flex flex-row gap-2">
+                    <ul className="flex flex-wrap gap-2">
                       {project.techStack.map((tech, index) => (
                         <li key={index} className="bg-gray-800 rounded-full px-3 py-1 text-xs font-medium text-blue-500">{tech}</li>
                       ))}
@@ -175,26 +175,26 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
         onMouseLeave={() => setHovered(false)}
         className="relative p-4 flex flex-col border border-transparent hover:border-blue-500 hover:border-solid rounded-xl cursor-pointer"
       >
-        <div className="flex gap-4 flex-col w-full">
+        <div className="flex flex-col w-full">
           <motion.div layoutId={`image-${project.projectName}-${id}`}>
             <Image
-              width={100}
-              height={100}
+              width={300}
+              height={200}
               src={project.imgSrc}
               alt={project.projectName}
-              className="h-60 w-full rounded-lg object-cover object-top"
+              className="h-48 w-full rounded-lg object-cover object-top"
             />
           </motion.div>
-          <div className="flex justify-center items-center flex-col">
+          <div className="flex flex-col items-center mt-2">
             <motion.h3
               layoutId={`title-${project.projectName}-${id}`}
-              className="font-medium text-neutral-100 dark:text-neutral-300 text-center md:text-left text-base"
+              className="font-medium text-neutral-100 dark:text-neutral-300 text-center text-lg"
             >
               {project.projectName}
             </motion.h3>
             <motion.p
               layoutId={`description-${project.description}-${id}`}
-              className="text-neutral-200 dark:text-neutral-500 text-center md:text-left text-base"
+              className="text-neutral-200 dark:text-neutral-500 text-center text-sm"
             >
               {project.description}
             </motion.p>
