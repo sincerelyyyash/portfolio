@@ -14,7 +14,7 @@ export default function Hero() {
       }}
       className="flex flex-wrap justify-center mt-4"
     >
-      <section className="flex flex-col md:flex-row justify-start w-full min-h-[35rem] space-y-8 md:space-y-0 md:space-x-8 p-8">
+      <section className="flex flex-col md:flex-row justify-start w-full min-h-[35rem] space-y-8 md:space-y-0 md:space-x-8 p-8 mt-20">
 
         <div className="flex-1 md:flex-[1/3] text-center p-4 rounded-full shadow-md">
           <div className="w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto rounded-full overflow-hidden">
