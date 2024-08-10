@@ -71,7 +71,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             <motion.div
               layoutId={`card-${project.projectName}-${id}`}
               ref={ref}
-              className="w-full max-w-[90%] md:max-w-[80%] lg:max-w-[70%] h-full max-h-[90%] md:max-h-[80%] lg:max-h-[70%] flex flex-col bg-black dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[90%] md:max-w-[80%] lg:max-w-[70%] h-full max-h-[90%] md:max-h-[80%] lg:max-h-[70%] flex flex-col bg-black dark:bg-neutral-900 sm:rounded-3xl overflow-hidden border border-blue-500"
             >
               <motion.div layoutId={`image-${project.projectName}-${id}`}>
                 <Image
