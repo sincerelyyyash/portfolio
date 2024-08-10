@@ -4,45 +4,37 @@ export interface Experience {
   location: string;
   startDate: string;
   endDate: string;
-  description: string;
+  description: string[];
   skills: string[];
 }
 
-export const experiences: Experience[] = [
-  {
-    name: "Alice Johnson",
-    title: "Frontend Developer",
-    location: "San Francisco, CA",
-    startDate: "June 2023",
-    endDate: "Present",
-    description: "Developed user-friendly web applications using React and TypeScript, improving performance by 40%.",
-    skills: ["JavaScript", "React", "TypeScript", "CSS", "HTML"]
-  },
-  {
-    name: "Bob Smith",
-    title: "Backend Developer",
-    location: "New York, NY",
-    startDate: "January 2022",
-    endDate: "December 2023",
-    description: "Built and maintained RESTful APIs using Node.js and Express, ensuring high availability and scalability.",
-    skills: ["Node.js", "Express", "MongoDB", "RESTful API", "GraphQL"]
-  },
-  {
-    name: "Charlie Brown",
-    title: "UI/UX Designer",
-    location: "Austin, TX",
-    startDate: "March 2021",
-    endDate: "November 2022",
-    description: "Designed intuitive user interfaces and user experiences for mobile and web applications, enhancing user satisfaction.",
-    skills: ["Figma", "Adobe XD", "Wireframing", "Prototyping", "Usability Testing"]
-  },
-  {
-    name: "Dana Lee",
-    title: "Software Engineer Intern",
-    location: "Remote, India",
-    startDate: "May 2024",
-    endDate: "Present",
-    description: "Built a Next.js based landing page for the company, resulting in a 30% increase in user engagement.",
-    skills: ["JavaScript", "TypeScript", "Python", "WebSockets", "RESTful API", "Node.js", "Figma", "Next.js"]
-  },
-];
+export const experiences: Experience[] =
+  [
+    {
+      "name": "Aquaria Solutions",
+      "title": "Software Developer Intern",
+      "location": "Remote",
+      "startDate": "April 2023",
+      "endDate": "August 2023",
+      "description": [
+        "Achieved significant improvements in web application performance and delivery rate.",
+        "Performance increased by 40%, and delivery rate enhanced by 30%.",
+        "Accomplished this through end-to-end development using Flutter and React, combined with Agile methodologies to streamline processes."
+      ],
+      "skills": ["Flutter", "React", "Firebase", "Java", "REST API"]
+    },
+    {
+      "name": "Cogent Web Services",
+      "title": "Software Developer Intern",
+      "location": "Remote",
+      "startDate": "November 2023",
+      "endDate": "January 2024",
+      "description": [
+        "Delivered high availability and scalability for RESTful APIs.",
+        "Improved API response efficiency by 25% and reduced downtime by 15%.",
+        "Achieved these results by developing with Node.js and Express, integrating Flutter for mobile applications, and applying Agile practices for effective project management."
+      ],
+      "skills": ["Node.js", "Express", "React", "RESTful API", "Flutter"]
+    }
+  ]
+
