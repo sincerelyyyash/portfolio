@@ -30,9 +30,9 @@ const WorkExCard: FC<CardProps> = ({
           <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-600 to-neutral-200 mb-2 md:mb-0">
             {name}
           </h2>
-          <div className="text-sm font-light text-right">
-            <div>{location}</div>
-            <div>
+          <div className="text-sm font-light md:text-right flex flex-col md:items-end">
+            <div className="text-left md:text-right">{location}</div>
+            <div className="text-left md:text-right">
               {startDate} - {endDate}
             </div>
           </div>

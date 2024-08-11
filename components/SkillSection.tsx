@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Card from '../components/techIconCard';
@@ -50,16 +50,28 @@ const Skills = () => {
           <div className="flex flex-wrap justify-center bg-black z-10 py-4 px-2 w-full">
             <div className="flex flex-wrap justify-center space-x-2 md:space-x-4">
               {Object.keys(skills).filter((category) => category !== 'default').map((category) => (
-                <button
-                  key={category}
-                  onClick={() => handleCategoryChange(category as SkillCategory)}
-                  className={`px-4 py-2 rounded-lg text-lg md:text-xl transition-colors duration-300 ${selectedCategory === category
-                    ? 'text-blue-500 bg-gradient-to-b'
-                    : 'bg-gradient-to-b from-neutral-200 to-neutral-600 text-transparent bg-clip-text'
-                    }`}
-                >
-                  {category.charAt(0).toUpperCase() + category.slice(1)}
-                </button>
+                <div key={category} className="relative inline-flex items-center">
+                  <button
+                    onClick={() => handleCategoryChange(category as SkillCategory)}
+                    className={`flex items-center rounded-full px-3 py-1 font-medium transition-colors duration-300 ${selectedCategory === category
+                      ? 'bg-gray-800 text-blue-500'
+                      : 'bg-gradient-to-b from-neutral-200 to-neutral-600 text-transparent bg-clip-text'
+                      }`}
+                  >
+                    {category.charAt(0).toUpperCase() + category.slice(1)}
+                    {selectedCategory === category && (
+                      <span
+                        className="ml-2 text-white text-xl cursor-pointer mb-1"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleCategoryChange(category as SkillCategory);
+                        }}
+                      >
+                        x
+                      </span>
+                    )}
+                  </button>
+                </div>
               ))}
             </div>
           </div>

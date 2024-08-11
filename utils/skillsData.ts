@@ -27,12 +27,12 @@ export const skills = {
     { skill: 'React', img: '/assets/logo/react-svgrepo-com.svg' },
     { skill: 'NextJS', img: '/assets/logo/nextjs-svgrepo-com.svg' },
     { skill: 'Flutter', img: '/assets/logo/flutter-svgrepo-com.svg' },
-    { skill: 'Tailwind CSS', img: '/assets/logo/tailwind-svgrepo-com.svg' },
+    { skill: 'TailwindCSS', img: '/assets/logo/tailwind-svgrepo-com.svg' },
   ],
   backend: [
     { skill: 'Node.js', img: '/assets/logo/nodejs-svgrepo-com.svg' },
     { skill: 'Express.js', img: '/assets/logo/express-svgrepo-com.svg' },
-    { skill: 'Cloudflare Workers', img: '/assets/logo/cloudflare-svgrepo-com.svg' },
+    { skill: 'Workers', img: '/assets/logo/cloudflare-svgrepo-com.svg' },
     { skill: 'Firebase', img: '/assets/logo/firebase-svgrepo-com.svg' },
   ],
   database: [

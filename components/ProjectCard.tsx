@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -50,7 +49,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/50 h-full w-full z-10"
+            className="fixed inset-0 bg-black/50  w-full z-10"
           />
         )}
       </AnimatePresence>
@@ -71,7 +70,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             <motion.div
               layoutId={`card-${project.projectName}-${id}`}
               ref={ref}
-              className="w-full max-w-[90%] md:max-w-[80%] lg:max-w-[70%] h-full max-h-[90%] md:max-h-[80%] lg:max-h-[70%] flex flex-col bg-black dark:bg-neutral-900 sm:rounded-3xl overflow-hidden border border-blue-500"
+              className="w-full max-w-[80%] md:max-w-[70%] lg:max-w-[50%] max-h-[90%] md:max-h-[80%] lg:max-h-[70%] flex flex-col bg-black dark:bg-neutral-900 sm:rounded-3xl overflow-hidden border border-blue-500 transition-all duration-300 ease-in-out transform lg:scale-100 sm:scale-50"
             >
               <motion.div layoutId={`image-${project.projectName}-${id}`}>
                 <Image
@@ -84,8 +83,8 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                 />
               </motion.div>
 
-              <div className="p-4">
-                <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
+              <div className="p-4 flex flex-col card-content">
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-4 flex-grow">
                   <div>
                     <motion.h3
                       layoutId={`title-${project.projectName}-${id}`}
@@ -95,9 +94,9 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${project.description}-${id}`}
-                      className="text-gray-200 text-sm sm:text-base mt-1"
+                      className="text-gray-200 text-sm sm:text-base mt-1 mb-2"
                     >
-                      {project.description}
+                      {project.description.split('\n')[0]}
                     </motion.p>
                   </div>
 
@@ -148,15 +147,20 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                     </div>
                   </div>
                 </div>
-                <div className="pt-4 relative px-4">
+                <div className="pt-4 flex-grow overflow-hidden">
                   <motion.div
                     layout
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-gray-200 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-gray-200 text-xs md:text-sm lg:text-base"
                   >
-                    <ul className="flex flex-wrap gap-2">
+                    <ul className="list-disc list-inside space-y-2">
+                      {project.description.split('\n').slice(1).map((point, index) => (
+                        <li key={index}>{point}</li>
+                      ))}
+                    </ul>
+                    <ul className="flex flex-wrap gap-2 mt-4">
                       {project.techStack.map((tech, index) => (
                         <li key={index} className="bg-gray-800 rounded-full px-3 py-1 text-xs font-medium text-blue-500">{tech}</li>
                       ))}
@@ -196,7 +200,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
               layoutId={`description-${project.description}-${id}`}
               className="text-neutral-200 dark:text-neutral-500 text-center text-sm"
             >
-              {project.description}
+              {project.description.split('\n')[0]}
             </motion.p>
           </div>
         </div>
@@ -233,4 +237,3 @@ const CloseIcon = () => {
     </motion.svg>
   );
 };
-
