@@ -16,15 +16,22 @@ export const Projects = [{
   repoLink: "https://github.com/sincerelyyyash/sneak_heads",
   description: "Full Stack Sneaker E-Commerce Web App built using MERN",
   techStack: ["React", "Express", "NodeJS", "MongoDB", "Cloudinary"],
+}, {
+  projectName: "Cryptic Wallet",
+  imgSrc: "/assets/images/cryptic.png",
+  deployedLink: "https://cryptic-wallet.vercel.app",
+  repoLink: "https://github.com/sincerelyyyash/cryptic-wallet",
+  description: "A Web Based Hierarchical Deterministic (HD) Wallet Built With NextJS",
+  techStack: ["NextJS", "TypeScript", "Framer Motion", "Web3", "Blockchain"],
 },
-{
-  projectName: "PayU",
-  imgSrc: "/assets/images/Wallet.png",
-  deployedLink: "https://example.com",
-  repoLink: "https://github.com/sincerelyyyash/wallet-app",
-  description: "Wallet App built using NextJS & Turborepo with Prisma, Postgres and TypeScript",
-  techStack: ["NextJS", "Turborepo", "Prisma", "TypeScript", "Tailwind CSS"],
-},
+// {
+//   projectName: "PayU",
+//   imgSrc: "/assets/images/Wallet.png",
+//   deployedLink: "https://example.com",
+//   repoLink: "https://github.com/sincerelyyyash/wallet-app",
+//   description: "Wallet App built using NextJS & Turborepo with Prisma, Postgres and TypeScript",
+//   techStack: ["NextJS", "Turborepo", "Prisma", "TypeScript", "Tailwind CSS"],
+// },
 {
   projectName: "Anonymous Opinions",
   imgSrc: "/assets/images/opinions.png",
@@ -39,7 +46,7 @@ export const Projects = [{
   deployedLink: "https://yashthakur.dev",
   repoLink: "https://github.com/sincerelyyyash/portfolio",
   description: "My Personal Portfolio Website built using NextJS, TypeScript and Framer Motion",
-  techStack: ["Next.js", "MongoDB", "NextAuth", "TypeScript", "Framer Motion"],
+  techStack: ["Next.js", "TypeScript", "Framer Motion", "Aceternity UI"],
 },
 
 ];
