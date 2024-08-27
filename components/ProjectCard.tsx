@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React, { useId, useState } from "react";
 import { motion } from "framer-motion";
@@ -22,8 +22,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
       layoutId={`card-${project.projectName}-${id}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`relative p-4 flex flex-col border border-transparent rounded-xl cursor-pointer transition-all duration-300 ${isHovered ? "border-blue-500" : ""
-        }`}
+      className={`relative p-4 flex flex-col rounded-xl cursor-pointer transition-all duration-300`}
     >
       <motion.div
         layoutId={`image-${project.projectName}-${id}`}
@@ -114,7 +113,7 @@ export const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
 
             <motion.div
               layout
-              className="mt-4 text-gray-200 text-xs md:text-sm lg:text-base"
+              className="text-gray-200 text-xs md:text-sm lg:text-base bg-neutral-900 w-full p-4 rounded-b-lg"
             >
               <ul className="list-disc list-inside space-y-2">
                 {project.description.split("\n").slice(1).map((point, index) => (
