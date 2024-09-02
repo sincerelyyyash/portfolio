@@ -25,8 +25,8 @@ const Skills = () => {
         initial={{ opacity: 0.5, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.3,
-          duration: 0.8,
+          delay: 0.1,
+          duration: 0.5,
           ease: 'easeInOut',
         }}
         className="flex flex-wrap justify-center mt-4"
@@ -41,13 +41,13 @@ const Skills = () => {
           initial={{ opacity: 0.5, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.3,
-            duration: 0.8,
+            delay: 0.1,
+            duration: 0.5,
             ease: 'easeInOut',
           }}
           className="flex flex-wrap justify-center mt-4"
         >
-          <div className="flex flex-wrap justify-center bg-black z-10 py-4 px-2 w-full">
+          <div className="flex flex-wrap justify-center bg-black z-10 py-4 px-2 w-full border border-white rounded-full p-4">
             <div className="flex flex-wrap justify-center space-x-2 md:space-x-4">
               {Object.keys(skills).filter((category) => category !== 'default').map((category) => (
                 <div key={category} className="relative inline-flex items-center">
@@ -83,8 +83,8 @@ const Skills = () => {
           initial={{ opacity: 0.5, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.3,
-            duration: 0.8,
+            delay: 0.1,
+            duration: 0.5,
             ease: 'easeInOut',
           }}
           className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4" // Adjust the grid layout here
