@@ -14,7 +14,7 @@ export function Navbar(): JSX.Element {
           <a href="#work" className="hover:underline">Work</a>
           <a href="#projects" className="hover:underline">Projects</a>
         </div>
-        <div className='text-md p-2 hidden md:block'>|</div> {/* Divider line */}
+        <div className='text-md p-2 hidden md:block'>|</div>
         <div className='flex space-x-4'>
           <div className='relative group'>
             <a href='https://github.com/sincerelyyyash' target='_blank' rel='noopener noreferrer'>
