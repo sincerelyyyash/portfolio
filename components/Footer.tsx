@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-import { EmailIcon, GithubIcon, LinkedInIcon, TwitterIcon } from './Navbar';
+import { EmailIcon, GithubIcon, LinkedInIcon, TwitterIcon } from '../utils/Icons';
 
 function Footer() {
   return (
