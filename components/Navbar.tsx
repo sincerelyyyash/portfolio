@@ -12,7 +12,7 @@ export function Navbar(): JSX.Element {
   };
 
   return (
-    <div className="fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 flex items-center justify-end p-4">
+    <div className="fixed top-1 inset-x-0 max-w-2xl mx-auto z-50 flex items-center justify-end p-4 bg-black">
       <div className="flex space-x-6 bg-black rounded-full p-2 px-4 shadow-lg border border-white/[0.40]">
         <button
           onClick={() => handleNavigation('/home')}
