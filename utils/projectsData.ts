@@ -22,7 +22,7 @@ export const Projects = [{
   deployedLink: "https://cryptic-wallet.vercel.app",
   repoLink: "https://github.com/sincerelyyyash/cryptic-wallet",
   description: "A Web Based Hierarchical Deterministic (HD) Wallet Built With NextJS",
-  techStack: ["NextJS", "TypeScript", "Framer Motion", "Web3", "Blockchain"],
+  techStack: ["NextJS", "TypeScript", "Framer Motion", "Web3"],
 },
 // {
 //   projectName: "PayU",

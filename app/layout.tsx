@@ -12,7 +12,7 @@ const palanquin = Palanquin({
 });
 
 export const metadata: Metadata = {
-  title: "Yash Thakur",
+  title: "Yash Thakur - Full Stack Developer",
   description: "Full Stack Developer Portfolio",
 };
 

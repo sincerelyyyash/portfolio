@@ -22,8 +22,8 @@ const WorkExCard: FC<CardProps> = ({
 }) => {
   return (
     <div
-      className="bg-gray-900 rounded-xl shadow-lg p-6 text-white relative overflow-hidden mb-4 w-full max-w-2xl"
-      style={{ border: "1px solid #E2CBFF" }}
+      className="bg-zinc-900 rounded-xl shadow-lg p-6 text-white relative overflow-hidden mb-4 w-full max-w-2xl"
+    // style={{ border: "1px solid #E2CBFF" }}
     >
       <div className="flex flex-col">
         <div className="flex flex-col md:flex-row justify-between items-start mb-4">
@@ -49,7 +49,7 @@ const WorkExCard: FC<CardProps> = ({
           {skills.map((skill) => (
             <span
               key={skill}
-              className="bg-gray-800 rounded-full px-3 py-1 text-xs font-medium text-blue-500"
+              className="bg-gray-800 rounded-full px-3 py-1 text-sm font-medium text-blue-500 italic"
             >
               {skill}
             </span>
