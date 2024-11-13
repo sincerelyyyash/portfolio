@@ -13,7 +13,7 @@ export const Projects = [
   {
     projectName: "Test.ai",
     imgSrc: "/assets/images/sneakheads.png",
-    deployedLink: "https://test-ai-two.vercel.app/",
+    deployedLink: "https://test-ai.xyz",
     repoLink: "https://github.com/sincerelyyyash/test.ai",
     description: "Test.ai is an AI-driven personalized testing platform that adapts to your learning style, providing customized quizzes, real-time feedback, and tailored recommendations to enhance your knowledge and skills.",
     techStack: ["NextJS", "Gemini AI", "MongoDB",],
