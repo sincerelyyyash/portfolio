@@ -13,7 +13,7 @@ export const Projects = [
   {
     projectName: "Test.ai",
     imgSrc: "/assets/images/sneakheads.png",
-    deployedLink: "https://test-ai-two.vercel.app/",
+    deployedLink: "https://test-ai.xyz",
     repoLink: "https://github.com/sincerelyyyash/test.ai",
     description: "Test.ai is an AI-driven personalized testing platform that adapts to your learning style, providing customized quizzes, real-time feedback, and tailored recommendations to enhance your knowledge and skills.",
     techStack: ["NextJS", "Gemini AI", "MongoDB",],
@@ -24,7 +24,14 @@ export const Projects = [
     repoLink: "https://github.com/sincerelyyyash/sneak_heads",
     description: "Full Stack Sneaker E-Commerce Web App built using MERN",
     techStack: ["React", "Express", "NodeJS", "MongoDB", "Cloudinary"],
-  }, {
+  },{
+    projectName: "Transsacto",
+    imgSrc: "/assets/images/transsacto.png",
+    deployedLink: "https://transsacto.vercel.app/",
+    repoLink: "https://github.com/sincerelyyyash/bank-app", 
+    description: "A Full Stack secure banking application.",
+    techStack: ["Node.js", "Express", "PostgreSQL", "Prisma"],
+  },{
     projectName: "Cryptic Wallet",
     imgSrc: "/assets/images/cryptic.png",
     deployedLink: "https://cryptic-wallet.vercel.app",
@@ -48,13 +55,13 @@ export const Projects = [
   //   description: "Full Stack Web App built with NextJS for sharing Anonymous Feedback",
   //   techStack: ["Next.js", "TypeScript", "MongoDB", "NextAuth"],
   // },
-  {
-    projectName: "Portfolio",
-    imgSrc: "/assets/images/portfolio.png",
-    deployedLink: "https://yashthakur.dev",
-    repoLink: "https://github.com/sincerelyyyash/portfolio",
-    description: "My Personal Portfolio Website built using NextJS, TypeScript and Framer Motion",
-    techStack: ["Next.js", "TypeScript", "Framer Motion", "Aceternity UI"],
-  },
+  // {
+  //   projectName: "Portfolio",
+  //   imgSrc: "/assets/images/portfolio.png",
+  //   deployedLink: "https://yashthakur.dev",
+  //   repoLink: "https://github.com/sincerelyyyash/portfolio",
+  //   description: "My Personal Portfolio Website built using NextJS, TypeScript and Framer Motion",
+  //   techStack: ["Next.js", "TypeScript", "Framer Motion", "Aceternity UI"],
+  // },
 
 ];
