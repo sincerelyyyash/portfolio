@@ -15,7 +15,7 @@ export const Projects = [
     imgSrc: "/assets/images/sneakheads.png",
     deployedLink: "https://test-ai.xyz",
     repoLink: "https://github.com/sincerelyyyash/test.ai",
-    description: "Test.ai is an AI-driven personalized testing platform that adapts to your learning style, providing customized quizzes, real-time feedback, and tailored recommendations to enhance your knowledge and skills.",
+    description: "Test.ai is an AI-driven platform that personalizes quizzes, provides real-time feedback, and tailors recommendations to enhance learning.",
     techStack: ["NextJS", "Gemini AI", "MongoDB",],
   }, {
     projectName: "SneakHeads",
@@ -24,14 +24,14 @@ export const Projects = [
     repoLink: "https://github.com/sincerelyyyash/sneak_heads",
     description: "Full Stack Sneaker E-Commerce Web App built using MERN",
     techStack: ["React", "Express", "NodeJS", "MongoDB", "Cloudinary"],
-  },{
+  }, {
     projectName: "Transsacto",
     imgSrc: "/assets/images/transsacto.png",
     deployedLink: "https://transsacto.vercel.app/",
-    repoLink: "https://github.com/sincerelyyyash/bank-app", 
+    repoLink: "https://github.com/sincerelyyyash/bank-app",
     description: "A Full Stack secure banking application.",
     techStack: ["Node.js", "Express", "PostgreSQL", "Prisma"],
-  },{
+  }, {
     projectName: "Cryptic Wallet",
     imgSrc: "/assets/images/cryptic.png",
     deployedLink: "https://cryptic-wallet.vercel.app",
