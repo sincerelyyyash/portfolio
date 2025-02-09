@@ -41,19 +41,19 @@ function Footer() {
         {/* </div> */}
       </div>
 
-      <div className='flex items-center text-lg mt-8 md:mt-0 justify-center'>
-        <p>
-          Portfolio inspired by{' '}
-          <a
-            href="https://manuarora.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-blue-500"
-          >
-            Manu Arora
-          </a>
-        </p>
-      </div>
+      {/* <div className='flex items-center text-lg mt-8 md:mt-0 justify-center'> */}
+      {/*   <p> */}
+      {/*     Portfolio inspired by{' '} */}
+      {/*     <a */}
+      {/*       href="https://manuarora.in/" */}
+      {/*       target="_blank" */}
+      {/*       rel="noopener noreferrer" */}
+      {/*       className="text-white hover:text-blue-500" */}
+      {/*     > */}
+      {/*       Manu Arora */}
+      {/*     </a> */}
+      {/*   </p> */}
+      {/* </div> */}
     </div>
   );
 }
