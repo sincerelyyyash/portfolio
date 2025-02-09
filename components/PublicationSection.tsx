@@ -1,5 +1,7 @@
 "use client";
+import { publications } from '@/utils/publicationData';
 import React from 'react';
+import PublicationCard from './PublicationCard';
 
 export function PublicationSection() {
   return (
@@ -9,6 +11,18 @@ export function PublicationSection() {
       </h4>
 
       <div className="flex flex-wrap justify-start gap-4">
+        {publications.map((pub, index) => (
+          <PublicationCard
+            key={index}
+            title={pub.title}
+            journal={pub.journal}
+            date={pub.date}
+            link={pub.link}
+            description={pub.description}
+          />
+        ))
+
+        }
       </div>
     </div>
   );
