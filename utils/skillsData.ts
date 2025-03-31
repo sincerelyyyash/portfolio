@@ -12,7 +12,7 @@ export const skills = {
   default: [
     { skill: 'NextJS', img: '/assets/logo/nextjs-svgrepo-com.svg' },
     { skill: 'React', img: '/assets/logo/react-svgrepo-com.svg' },
-    { skill: 'Django', img: '/assets/logo/react-svgrepo-com.svg' },
+    { skill: 'FastAPI', img: '/assets/logo/react-svgrepo-com.svg' },
     { skill: 'PostgreSQL', img: '/assets/logo/postgresql-svgrepo-com.svg' },
     { skill: 'MongoDB', img: '/assets/logo/mongodb-svgrepo-com.svg' },
     { skill: 'NodeJS', img: '/assets/logo/nodejs-svgrepo-com.svg' },

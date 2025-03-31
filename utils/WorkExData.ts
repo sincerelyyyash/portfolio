@@ -11,6 +11,19 @@ export interface Experience {
 export const experiences: Experience[] =
   [
     {
+      "name": "Stealth Startup",
+      "title": "Full Stack Engineering Intern",
+      "location": "Remote",
+      "startDate": "March 2025",
+      "endDate": "Present",
+      "description": [
+        "• Architecting & developing a full-stack MVP from scratch, designing scalable system architecture and implementing backend, frontend, and mobile applications for seamless cross-platform functionality.",
+        "• Integrating a core Machine Learning algorithm into the system, optimizing data flow, model deployment, and API interactions to enhance product intelligence.",
+        "• Leading end-to-end development, managing backend services, frontend interfaces, API integrations, and cloud deployment to ensure a high-performance, scalable, and production-ready solution."
+      ],
+      "skills": ["FastAPI", "NextJS", "React-Native", "Python", "Machine Learning", "Postgres"]
+    },
+    {
       "name": "Cogent Web Services",
       "title": "Software Developer Intern",
       "location": "Remote",

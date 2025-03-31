@@ -45,7 +45,7 @@ export default function Hero() {
         </p>
 
         <p className="text-md text-neutral-400">
-          Full Stack Developer building products and web apps. Find me
+          Full Stack Engineering Intern at a Stealth Startup.<br /> Find me
           on{" "}
           <Link
             href="https://twitter.com/sincerelyyyash"
