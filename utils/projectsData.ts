@@ -11,6 +11,14 @@ export interface Projects {
 
 export const Projects = [
   {
+    projectName: "Resume-AI",
+    imgSrc: "/assets/images/sneakheads.png",
+    deployedLink: "https://resume-ai.in",
+    repoLink: "https://github.com/sincerelyyyash/resume-ai",
+    description: "Resume-AI is an AI-powered agent that customizes your resume to match any job description, making job applications faster and more effective.",
+    techStack: ["NextJS", "FastAPI", "PostgreSQL", "Langchain", "Gemini AI"],
+  },
+  {
     projectName: "Test.ai",
     imgSrc: "/assets/images/sneakheads.png",
     deployedLink: "https://test-ai.xyz",
@@ -31,14 +39,15 @@ export const Projects = [
     repoLink: "https://github.com/sincerelyyyash/bank-app",
     description: "A Full Stack secure banking application.",
     techStack: ["Node.js", "Express", "PostgreSQL", "Prisma"],
-  }, {
-    projectName: "Cryptic Wallet",
-    imgSrc: "/assets/images/cryptic.png",
-    deployedLink: "https://cryptic-wallet.vercel.app",
-    repoLink: "https://github.com/sincerelyyyash/cryptic-wallet",
-    description: "A Web Based Hierarchical Deterministic (HD) Wallet Built With NextJS",
-    techStack: ["NextJS", "TypeScript", "Framer Motion", "Web3"],
-  },
+  }, 
+  // {
+  //   projectName: "Cryptic Wallet",
+  //   imgSrc: "/assets/images/cryptic.png",
+  //   deployedLink: "https://cryptic-wallet.vercel.app",
+  //   repoLink: "https://github.com/sincerelyyyash/cryptic-wallet",
+  //   description: "A Web Based Hierarchical Deterministic (HD) Wallet Built With NextJS",
+  //   techStack: ["NextJS", "TypeScript", "Framer Motion", "Web3"],
+  // },
   // {
   //   projectName: "PayU",
   //   imgSrc: "/assets/images/Wallet.png",
