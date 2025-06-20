@@ -1,41 +1,48 @@
-
 "use client";
 
 import React from 'react';
-import { useRouter } from 'next/navigation';
 
 export function Navbar(): JSX.Element {
-  const router = useRouter();
-
-  const handleNavigation = (path: string) => {
-    router.push(path);
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
-    <div className="fixed top-0 inset-x-0 max-w-3xl mx-auto z-50 p-4 bg-black rounded-full flex items-center justify-end">
-      <div className="flex flex-col h-full justify-between">
-        <div className="flex space-x-6 bg-black rounded-full p-2 px-4 shadow-lg border border-white/[0.40]">
-          <button
-            onClick={() => handleNavigation('/')}
-            className="text-blue-500 font-bold hover:text-white transition duration-300"
-          >
-            Home
-          </button>
-          <button
-            onClick={() => handleNavigation('#projects')}
-            className="text-white hover:text-blue-500 transition duration-300"
-          >
-            Projects
-          </button>
-          <button
-            onClick={() => handleNavigation('#work')}
-            className="text-white hover:text-blue-500 transition duration-300"
-          >
-            Work
-          </button>
+    <nav className="fixed top-0 w-full z-50 py-6 px-4 md:px-8 lg:px-16">
+      <div className="max-w-4xl mx-auto">
+        <div className="flex justify-end">
+          <div className="flex space-x-8">
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="text-neutral-400 hover:text-white transition-colors duration-200 font-medium"
+            >
+              Home
+            </button>
+            <button
+              onClick={() => scrollToSection('projects')}
+              className="text-neutral-400 hover:text-white transition-colors duration-200 font-medium"
+            >
+              Projects
+            </button>
+            <button
+              onClick={() => scrollToSection('work')}
+              className="text-neutral-400 hover:text-white transition-colors duration-200 font-medium"
+            >
+              Work
+            </button>
+            <button
+              onClick={() => scrollToSection('skills')}
+              className="text-neutral-400 hover:text-white transition-colors duration-200 font-medium"
+            >
+              Skills
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 

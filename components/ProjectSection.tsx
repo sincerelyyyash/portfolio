@@ -1,44 +1,55 @@
-
 "use client";
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { ProjectCard } from './ProjectCard';
 import { Projects } from '@/utils/projectsData';
 
 const ProjectSection = () => {
+  // Show only first 4 projects
+  const displayedProjects = Projects.slice(0, 4);
+
   return (
-    <div id='projects'>
-      {/* <motion.div */}
-      {/*   initial={{ opacity: 0.5, y: 100 }} */}
-      {/*   whileInView={{ opacity: 1, y: 0 }} */}
-      {/*   transition={{ */}
-      {/*     delay: 0.1, */}
-      {/*     duration: 0.5, */}
-      {/*     ease: 'easeInOut', */}
-      {/*   }} */}
-      {/*   className="flex flex-wrap justify-center mt-4" */}
-      {/* > */}
-      <h4 className="pt-10 relative z-10 text-lg md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-600 to-neutral-200 mt-4 mb-2">
-        Projects
-      </h4>
-      {/* </motion.div> */}
-      {/* <motion.div */}
-      {/*   initial={{ opacity: 0.5, y: 100 }} */}
-      {/*   whileInView={{ opacity: 1, y: 0 }} */}
-      {/*   transition={{ */}
-      {/*     delay: 0.1, */}
-      {/*     duration: 0.5, */}
-      {/*     ease: 'easeInOut', */}
-      {/*   }} */}
-      {/*   className="flex flex-wrap justify-center mt-4" */}
-      {/* > */}
-      <div className="max-w-3xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
-        {Projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
+    <section id='projects' className="w-full px-4 md:px-8 ">
+      <div className="max-w-4xl mx-auto">
+        
+        {/* Section Header */}
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
+            Projects
+          </h2>
+          
+          <Link 
+            href="/projects"
+            className="text-neutral-400 hover:text-white transition-colors duration-200 text-lg font-medium group"
+          >
+            See All
+            <span className="inline-block ml-2 transition-transform duration-200 group-hover:translate-x-1">
+              →
+            </span>
+          </Link>
+        </div>
+
+        {/* Projects List */}
+        <div className="space-y-0">
+          {displayedProjects.map((project, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: index * 0.1,
+                duration: 0.5,
+                ease: 'easeOut',
+              }}
+              viewport={{ once: true, margin: "-50px" }}
+            >
+              <ProjectCard project={project} />
+            </motion.div>
+          ))}
+        </div>
       </div>
-      {/* </motion.div> */}
-    </div>
+    </section>
   )
 }
 

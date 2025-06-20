@@ -21,41 +21,48 @@ const WorkExCard: FC<CardProps> = ({
   skills,
 }) => {
   return (
-    <div
-      className="bg-zinc-900 rounded-xl shadow-lg p-6 text-white relative overflow-hidden mb-4 w-full max-w-2xl"
-    // style={{ border: "1px solid #E2CBFF" }}
-    >
-      <div className="flex flex-col">
-        <div className="flex flex-col md:flex-row justify-between items-start mb-4">
-          <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-600 to-neutral-200 mb-2 md:mb-0">
+    <div className="group py-2 transition-all duration-300 hover:bg-neutral-900/20 -mx-6 px-6 rounded-lg">
+      
+      {/* Header with company and dates/location */}
+      <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
+        <div className="flex-1">
+          <h3 className="text-2xl font-bold text-white group-hover:text-neutral-200 transition-colors duration-300 mb-1">
             {name}
-          </h2>
-          <div className="text-sm font-light md:text-right flex flex-col md:items-end">
-            <div className="text-left md:text-right">{location}</div>
-            <div className="text-left md:text-right">
-              {startDate} - {endDate}
-            </div>
-          </div>
+          </h3>
+          <h4 className="text-lg font-medium text-neutral-300 mb-3 md:mb-0">
+            {title}
+          </h4>
         </div>
-        <h3 className="text-lg font-semibold mt-2">{title}</h3>
-        <div className="text-sm mt-2">
-          {description.map((line, index) => (
-            <p key={index} className="mb-2 break-words">
-              {line}
-            </p>
-          ))}
-        </div>
-        <div className="mt-4 flex flex-wrap gap-2">
-          {skills.map((skill) => (
-            <span
-              key={skill}
-              className="bg-gray-800 rounded-full px-3 py-1 text-sm font-medium text-blue-500 italic"
-            >
-              {skill}
-            </span>
-          ))}
+        
+        <div className="text-sm text-neutral-400 md:text-right flex flex-col space-y-1">
+          <span>{location}</span>
+          <span>{startDate} - {endDate}</span>
         </div>
       </div>
+
+      {/* Description */}
+      <div className="mb-4 space-y-2">
+        {description.map((line, index) => (
+          <p key={index} className="text-neutral-400 leading-relaxed">
+            {line}
+          </p>
+        ))}
+      </div>
+
+      {/* Skills */}
+      <div className="flex flex-wrap gap-3">
+        {skills.map((skill) => (
+          <span
+            key={skill}
+            className="text-neutral-500 text-sm font-medium"
+          >
+            {skill}
+          </span>
+        ))}
+      </div>
+
+      {/* Divider */}
+      <div className="w-full h-px bg-neutral-800 mt-8 group-hover:bg-neutral-700 transition-colors duration-300" />
     </div>
   );
 };
