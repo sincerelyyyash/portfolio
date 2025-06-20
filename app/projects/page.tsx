@@ -5,11 +5,26 @@ import Link from 'next/link';
 import { ProjectCard } from '@/components/ProjectCard';
 import { Projects } from '@/utils/projectsData';
 import Footer from '@/components/Footer';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects - Yash Thakur",
+  description: "Explore my full stack development projects built with React, Next.js, TypeScript, and modern web technologies.",
+  openGraph: {
+    title: "Projects - Yash Thakur",
+    description: "Explore my full stack development projects built with React, Next.js, TypeScript, and modern web technologies.",
+    url: "https://sincerelyyyash.com/projects", 
+  },
+  twitter: {
+    title: "Projects - Yash Thakur",
+    description: "Explore my full stack development projects built with React, Next.js, TypeScript, and modern web technologies.",
+  },
+};
 
 const ProjectsPage = () => {
   return (
     <main className="w-full min-h-screen">
-      <div className="max-w-4xl px-4 md:px-8 mx-auto">
+      <div className="max-w-4xl px-4 lg:px-2 mx-auto">
         
 
         <div className="my-12">

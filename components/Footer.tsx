@@ -5,7 +5,7 @@ import { GithubIcon, LinkedInIcon, TwitterIcon } from '../utils/Icons';
 function Footer() {
   return (
     <footer className="w-full pt-8 pb-4">
-      <div className="max-w-4xl mx-auto px-4 md:px-8 lg:px-16">
+      <div className="max-w-4xl mx-auto px-4 lg:px-2">
         
         {/* Divider */}
         {/* <div className="w-full h-px bg-neutral-800 mb-8" /> */}
