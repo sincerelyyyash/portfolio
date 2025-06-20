@@ -1,12 +1,31 @@
 "use client";
 
 import React from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 
 export function Navbar(): JSX.Element {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const pathname = usePathname();
+  const router = useRouter();
+  const isProjectsPage = pathname === '/projects';
+
+  const handleNavigation = (sectionId: string) => {
+    if (isProjectsPage) {
+
+      router.push(`/#${sectionId}`);
+    } else {
+      
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
+  const handleHomeClick = () => {
+    if (isProjectsPage) {
+      router.push('/');
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
@@ -16,25 +35,25 @@ export function Navbar(): JSX.Element {
         <div className="flex justify-end">
           <div className="flex space-x-8">
             <button
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={handleHomeClick}
               className="text-neutral-400 hover:text-white transition-colors duration-200 font-medium"
             >
               Home
             </button>
             <button
-              onClick={() => scrollToSection('projects')}
+              onClick={() => handleNavigation('projects')}
               className="text-neutral-400 hover:text-white transition-colors duration-200 font-medium"
             >
               Projects
             </button>
             <button
-              onClick={() => scrollToSection('work')}
+              onClick={() => handleNavigation('work')}
               className="text-neutral-400 hover:text-white transition-colors duration-200 font-medium"
             >
               Work
             </button>
             <button
-              onClick={() => scrollToSection('skills')}
+              onClick={() => handleNavigation('skills')}
               className="text-neutral-400 hover:text-white transition-colors duration-200 font-medium"
             >
               Skills
