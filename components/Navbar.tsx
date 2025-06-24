@@ -30,7 +30,7 @@ export function Navbar(): JSX.Element {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 py-6 px-4 md:px-8 lg:px-16">
+    <nav className="fixed top-0 w-full z-50 py-6 px-4 md:px-8 lg:px-16 bg-black/80 backdrop-blur-md border-b border-neutral-800/50">
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-end">
           <div className="flex space-x-8">

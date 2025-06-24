@@ -89,7 +89,7 @@ export default function RootLayout({
         {/* <div className="px-8 lg:px-20"> */}
           <div className="relative w-full flex items-center justify-center flex-col px-4 sm:px-6 lg:px-8">
             <Navbar />
-            <div className="mt-10 w-full max-w-7xl">
+            <div className="mt-24 w-full max-w-7xl">
               {children}
             </div>
           </div>
