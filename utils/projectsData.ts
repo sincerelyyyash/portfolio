@@ -72,14 +72,14 @@ export const Projects = [
     description: "Portfolio with Masonry Grid Design with DeepLinking.",
     techStack: ["Next.js", "TypeScript", "Framer Motion", "Tailwind CSS"],
   },
-  {
-    projectName: "NexFlow",
-    imgSrc: "/assets/images/opinions.png",
-    deployedLink: "https://nex-flow.vercel.app/",
-    repoLink: "https://github.com/sincerelyyyash/NexFlow",
-    description: "Workflow Builder with ReactFlow",
-    techStack: ["Next.js", "ReactFlow", "TypeScript", "Framer Motion", "Tailwind CSS", "MongoDB"],
-  },
+  // {
+  //   projectName: "NexFlow",
+  //   imgSrc: "/assets/images/opinions.png",
+  //   deployedLink: "https://nex-flow.vercel.app/",
+  //   repoLink: "https://github.com/sincerelyyyash/NexFlow",
+  //   description: "Workflow Builder with ReactFlow",
+  //   techStack: ["Next.js", "ReactFlow", "TypeScript", "Framer Motion", "Tailwind CSS", "MongoDB"],
+  // },
   
   // {
   //   projectName: "Portfolio",
