@@ -26,6 +26,14 @@ export const Projects = [
     description: "Test.ai is an AI-driven platform that personalizes quizzes, provides real-time feedback, and tailors recommendations to enhance learning.",
     techStack: ["NextJS", "Gemini AI", "MongoDB",],
   }, {
+    projectName: "Gitbot (like CodeRabbit)",
+    imgSrc: "/assets/images/sneakheads.png",
+    deployedLink: "https://github.com/apps/synapticbot",
+    repoLink: "https://github.com/sincerelyyyash/gitbot",
+    description: "gitbot is an AI-powered GitHub Assistant that automates Q&A, analyzes issues, and reviews and summarizes pull requests. It is designed for modularity, production-readiness, and easy extensibility.",
+    techStack: ["FastAPI", "LangChain", "ChromaDB", "Gemini LLM", "Python"],
+  },
+  {
     projectName: "SneakHeads",
     imgSrc: "/assets/images/sneakheads.png",
     deployedLink: "https://sneakheads.netlify.app",
