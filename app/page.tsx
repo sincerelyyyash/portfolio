@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import ProjectSection from "@/components/ProjectSection";
-import { PublicationSection } from "@/components/PublicationSection";
+// import { PublicationSection } from "@/components/PublicationSection";
 import Skills from "@/components/SkillSection";
 import WorkSection from "@/components/WorkSection";
 
@@ -13,7 +13,7 @@ export default function Home() {
         <WorkSection />
         <Skills />
         <ProjectSection />
-        <PublicationSection />
+{/*         <PublicationSection /> */}
       </div>
       <Footer />
     </div>
