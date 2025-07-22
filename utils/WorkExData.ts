@@ -15,7 +15,7 @@ export const experiences: Experience[] =
       "title": "Full Stack Engineering Intern",
       "location": "Remote",
       "startDate": "March 2025",
-      "endDate": "Present",
+      "endDate": "May 2025",
       "description": [
         "• Architecting & developing a full-stack MVP from scratch, designing scalable system architecture and implementing backend, frontend, and mobile applications for seamless cross-platform functionality.",
         "• Integrating a core Machine Learning algorithm into the system, optimizing data flow, model deployment, and API interactions to enhance product intelligence.",

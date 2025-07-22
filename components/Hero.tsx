@@ -50,8 +50,8 @@ export default function Hero() {
 
             {/* Description */}
             <div className="space-y-1 mb-4 text-neutral-400 leading-relaxed">
-              <p>
-                Full Stack Engineering Intern at a Stealth Startup.
+              <p className="text-blue-500">
+                Open to opportunities, freelance work, and collaborations.
               </p>
               
               <p>
@@ -61,10 +61,12 @@ export default function Hero() {
                   className="text-white font-medium hover:text-neutral-200 transition-colors duration-200"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Twitter (opens in a new tab) to connect"
+                  tabIndex={0}
                 >
                   Twitter
                 </Link>{" "}
-                for updates.
+                to connect.
               </p>
               
               <p>
