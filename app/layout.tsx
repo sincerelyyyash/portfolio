@@ -82,8 +82,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
+  return (    <html lang="en" className="dark">
       <body className={palanquin.className}>
         <Analytics />
         {/* <div className="px-8 lg:px-20"> */}
