@@ -30,8 +30,16 @@ export const Projects = [
     imgSrc: "/assets/images/sneakheads.png",
     deployedLink: "https://github.com/apps/synapticbot",
     repoLink: "https://github.com/sincerelyyyash/gitbot",
-    description: "gitbot is an AI-powered GitHub Assistant that automates Q&A, analyzes issues, and reviews and summarizes pull requests. It is designed for modularity, production-readiness, and easy extensibility.",
+    description: "Gitbot is an AI-powered GitHub Assistant that automates Q&A, analyzes issues, and reviews and summarizes pull requests. It is designed for modularity, production-readiness, and easy extensibility.",
     techStack: ["FastAPI", "LangChain", "ChromaDB", "Gemini LLM", "Python"],
+  },
+  {
+    projectName: "MemoryMind Chat",
+    imgSrc: "/assets/images/sneakheads.png",
+    deployedLink: "http://chat.sincerelyyyash.com/",
+    repoLink: "https://github.com/sincerelyyyash/memory-mind",
+    description: "AI chat application with MCP (Model Context Protocol) to create memory-aware conversations. The AI remembers facts about users across sessions and provides personalized responses using proper MCP protocol implementation.",
+    techStack: ["NextJS", "MCP Server", "Postgres", "Langchain", "Gemini", "Redis"],
   },
   {
     projectName: "SneakHeads",
