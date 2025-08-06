@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Yash Thakur Portfolio",
     images: [
       {
-        url: "/assets/images/portfolio.png", 
+        url: "https://sincerelyyyash.com/assets/images/portfolio.png?v=2", 
         width: 1200,
         height: 630,
         alt: "Yash Thakur - Full Stack Developer Portfolio",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Yash Thakur - Full Stack Developer",
     description: "Full Stack Developer specializing in React, Next.js, TypeScript, and modern web technologies. View my projects, publications, and experience.",
-    images: ["/assets/images/portfolio.png"], 
+    images: ["https://sincerelyyyash.com/assets/images/portfolio.png?v=2"], 
     creator: "@sincerelyyyash", 
   },
 
@@ -74,6 +74,12 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  
+  // Additional metadata for better social media compatibility
+  metadataBase: new URL("https://sincerelyyyash.com"),
+  alternates: {
+    canonical: "https://sincerelyyyash.com",
   },
 };
 
